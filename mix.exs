@@ -19,6 +19,7 @@ defmodule MixMib.Mixfile do
   end
 
   def application do
-    [applications: []]
+    [applications: [],
+     extra_applications: [:snmp]]
   end
 end
