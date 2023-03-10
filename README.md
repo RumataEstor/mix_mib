@@ -7,13 +7,13 @@ This project provides a Mix compiler that simplifies usage of [Erlang SNMP MIB c
 ## Installation
 
 The package can be installed by adding `mix_mib` to your list of dependencies in `mix.exs`
-and added to `compilers` list:
+and by adding `:mibs` to `compilers` list:
 
 ```elixir
 def project do
   [
     # ...
-    compilers: [:mix_mib] ++ Mix.compilers,
+    compilers: [:mibs | Mix.compilers],
     deps: [
       # ...
       {:mix_mib, "~> 1.0.0", runtime: false},

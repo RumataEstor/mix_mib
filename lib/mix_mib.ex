@@ -81,6 +81,8 @@ defmodule Mix.Tasks.Compile.Mibs do
 
     if :error in results do
       Mix.raise "Encountered compilation errors"
+    else
+      :ok
     end
   end
 
